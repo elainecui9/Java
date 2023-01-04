@@ -1,21 +1,46 @@
-Written by Elaine Cui and Adam Liu
-CUI00122 and LIU02390
+<b>Project 2</b> involes devloping a simplified version of chess. 2D arrays represent the chess board. Pawn promotion is implemented. The normal chess piece rules apply. 
 
-Each individual pieces were created by Adam, Elaine wrote board and game. We worked together to debug and fix all code.
+<b>Classes written by me:</b>
+<ul> <li> Game.java </li>
+<li> Rook.java </li>
+<li> Bishop.java </li>
+<li> Knight.java </li> 
+<li> Queen.java </li>
+<li> King.java </li>
+<li> Board.java </li></ul>
 
-To compile our code, in the terminal or command prompt, enter in "javac Game.java" once in the correct directory depending on where the java files are saved.
-Then, enter in "java Game" to call the interpreter to run the code.
+<b>Classes edited from class:</b>
+<ul> <li> Piece.java </li> </ul>
 
-Assumptions include that the user will only input single digits in the form "0 2 4 3" for example.
+<b>Classes given from class:</b>
+<ul> <li> Pawn.java </li> 
+ <li> Fen.java </li> </ul>
 
-There is an additional feature that if the user enters an invalid move, they will be prompted to reenter until correct.
+<b>Board.java: </b>
 
-No known bugs or defects.
+This class serves as the representation of a chess board. It is represented as a 2-Dimensional Array of type Piece. The class will also verify if the move desired by the user is legal or not, updating the piece and position of the borad. It is also determine when the game has ended. 
 
-No outside sources.
+<b>Piece.java:</b>
 
-“I certify that the information contained in this README file is complete and accurate. I have both read and followed the course policies
-in the ‘Academic Integrity - Course Policy’ section of the course syllabus.”
+An object
+of type Piece contains an instance variable which is initialized to a Unicode character for one of
+the 6 chess pieces. Using this char variable, Piece’s isMoveLegal() will redirect query to the
+proper method for rule-checking.
 
-Elaine Cui
-Adam Liu
+<b>Game.java:</b>
+
+Game.java is the class which contains this project’s main method. Within this main method we
+must create an interactive terminal experience for the players to interact with throughout the game.
+This class will instantiate the Board object and prompt the user for input. A visual representation
+of the board will be printed at the beginning of each player’s turn. The user should enter a starting
+point and an ending point, but all other work to execute the turn will happen elsewhere. The
+game will end when one player’s King has been “captured”.
+
+<b>Fen.java:</b>
+
+This class was provided by the class. It is based on Forsyth-Edwards Notation which is a method
+for saving the position of every piece on a chess board in 71 characters or less.
+
+<b>Chess Pieces (Rook, Bishop, Knight, Queen, King, Pawn): </b>
+
+Each different type of chess piece will determine whether the move the player desire is legal or not.
