@@ -1,11 +1,11 @@
 In <b> Project 3 </b>, I implemented a list in two different ways: as an ArrayList and as a LinkedList. In each list, a series of tests are put onto different methods regarding lists. I then compare the time complexities of a select few List methods when implemented as an ArrayList and as a LinkedList.
 
-<b>Written By Me: </b>
+<b>Classes Written By Me: </b>
 <ul><li>ArrayList.java</li>
 <li>LinkedList.java</li>
 <li>Analysis.txt</li></ul>
 
-<b>Given From Class: </b>
+<b>Classes Given From Class: </b>
 <ul><li> ScoringTestRule.java</li>
 <li> WorthPoints.java</li>
 <li>ArrayListTest.java</li>
@@ -29,6 +29,6 @@ This file contains an analysis between certain methods in ArrayList.java and Lin
 
 These files are where the tests are completed to check whether or not the code written in the respective files work correctly (junit may need to be implemented for the tests to work). 
 
-<b>ScoringtestRule.java, WorthPoints.java, List.java, & Node.java:</b>
+<b>ScoringTestRule.java, WorthPoints.java, List.java, & Node.java:</b>
 
 These classes are supportive files that will allow other parts of the project run smoothly.
