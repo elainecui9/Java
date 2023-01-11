@@ -1,22 +1,34 @@
-Written by Elaine Cui and Adam Liu
-CUI00122 and LIU02390
+In <b> Project 3 </b>, I implemented a list in two different ways: as an ArrayList and as a LinkedList. In each list, a series of tests are put onto different methods regarding lists. I then compare the time complexities of a select few List methods when implemented as an ArrayList and as a LinkedList.
 
-Elaine wrote most of the ArrayList class. Adam wrote most of the LinkedList class. We worked together to debug and write the analysis.
+<b>Written By Me: </b>
+<ul><li>ArrayList.java</li>
+<li>LinkedList.java</li>
+<li>Analysis.txt</li></ul>
 
-To compile our code, in the terminal or command prompt, enter in "javac ArrayListTest.java" or "javac LinkedListTest.java" once in the correct directory depending on where the java files are saved.
-Then, enter in "java ArrayListTest" or "java LinkedListTest" to call the interpreter to run the code. This will call the tests to test ArrayList.java or LinkedList.java that you can also compile by going to
-the terminal or commad prompt, enter in "javac ArrayList.java" or "javac LinkedList.java". Once in correct directory, enter "java ArrayList" or "java LinkedList" to call the interpreter.
+<b>Given From Class: </b>
+<ul><li> ScoringTestRule.java</li>
+<li> WorthPoints.java</li>
+<li>ArrayListTest.java</li>
+<li>LinkedListTest.java</li>
+<li>List.java</li>
+<li>Node.java</li></ul>
 
-There is the assumption that the test classes work and are compiled correctly. It is also assumed that the list is considered sorted when no elements are in it or only one element is in it.
+<b>ArrayList.java:</b>
 
-There are no additional features.
+A class that has multiple methods within that creates an Array. Functions include adding elements, increasing the size of the array, clearing the array, getting a certain item, sorting the list, removing an element, removing unwanted elements, merging the list, reversing the list, and pair swapping. Moreover, the class will keep track of whether the list is sorted. 
 
-No known bugs or defects.
+<b>LinkedList.java:</b>
 
-No outside sources other than the provided code for the class.
+A class similar to ArrayList.java that uses the Node.java class given. Uses nodes to do the same funtions as ArrayList.java.
 
-“I certify that the information contained in this README file is complete and accurate. I have both read and followed the course policies
-in the ‘Academic Integrity - Course Policy’ section of the course syllabus.”
+<b>Analysis.txt:</b>
 
-Elaine Cui
-Adam Liu
+This file contains an analysis between certain methods in ArrayList.java and LinkedList.java to see complexity difference between arrays and linked nodes. 
+
+<b>ArrayListTest.java & LinkedListTest.java:</b>
+
+These files are where the tests are completed to check whether or not the code written in the respective files work correctly (junit may need to be implemented for the tests to work). 
+
+<b>ScoringtestRule.java, WorthPoints.java, List.java, & Node.java:</b>
+
+These classes are supportive files that will allow other parts of the project run smoothly.
